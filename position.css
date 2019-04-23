@@ -1,0 +1,81 @@
+.mainContainer {
+    display: grid;
+    grid-gap: 6px;
+    height: 100% ;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+        "h h"
+        "n n"
+        "p p"
+        "a a"
+;    
+}
+
+@media (min-width: 750px) {
+   
+
+    
+}
+.imageContainer {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "x l";
+}
+.portrait {
+    grid-area: p;
+}
+
+/* nav {
+    grid-area: n;  
+    background-color: #98d9ff; 
+    /* TODO nav is not sharing line with header */
+    /* align-items: right;
+}  */
+header {
+    grid-area: h;
+}
+.about {
+    grid-area: a; 
+}
+
+footer {
+    grid-area: f;
+}
+h1:hover{animation: bounceIn}
+h1{
+    display:inline;
+    font-size: 30px
+}
+a{
+    font-size: 20px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+}
+
+html, body {
+  background-color: #98d9ff;
+  margin: 10px;
+}
+
+
+img{
+  align-items: right;
+}
+
+article {
+      background-color: #98d9ff;
+}
+footer{
+  background-color: #98d9ff;
+}
+h1:hover{
+  animation: flash 4s;
+}
